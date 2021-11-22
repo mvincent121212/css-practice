@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffafa;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Estonia', cursive;
+    font-size: 3em;
+}
+
+
+.paragraph-container {
+    height: 6em;
+    width: 100%;
+    position: relative;
+    font-size: 1.1em;
+}
+
+p {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.paragraph-container p {
+    display: inline-block;
+    background-color: rgba(95,158,160, 0.5);
+    border-radius: 10px; 
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.paragraph-container p::before {
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 1.2em;
+    content: '\f4ba'
+}
+
+.list-container {
+    list-style: none;
+    text-align: center;
+    padding: 100px;
+}
+
+.starting-element {
+    position: relative;
+    margin: 0;
+}
+
+.ending-element {
+    position: relative;
+}
+
+.starting-element::before {
+    content: open-quote;
+    position: absolute;
+    left: -125px;
+    top: -125px;
+    color:rgba(95,158,160, 0.5); 
+    font-size: 5em;
+}
+
+.ending-element::after {
+    content: close-quote;
+    position: absolute;
+    right: -125px;
+    top: -125px;
+    color:rgba(95,158,160, 0.5); 
+    font-size: 5em;
+}
+
+li {
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'Estonia', cursive;
+    font-size: 3em;
+}
+
+a {
+    color:cadetblue;
+}
+
+a::after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 0.75em;
+    content: '\f360'
+}
+
+
+
+
